@@ -6,20 +6,19 @@
 	"scripts": {
 		"test": "vitest run",
 		"test:lighthouse": "lighthouse http://localhost:3000 --output-path=./lighthouse-results",
-		"build:local": "yarn build:prod",
-		"build:prod": "yarn workspaces foreach -ptR run build && yarn build:css && yarn build:next",
+		"build:local": "pnpm run build:prod",
+		"build:prod": "pnpm --filter @discordjs/guide... run build && pnpm run build:css && pnpm run build:next",
 		"build:next": "next build",
-		"build:css": "yarn generate:css",
-		"build:analyze": "cross-env-shell ANALYZE=true yarn build:prod",
+		"build:css": "pnpm run generate:css",
+		"build:analyze": "cross-env-shell ANALYZE=true pnpm run build:prod",
 		"preview": "next start",
-		"dev": "concurrently 'yarn dev:contentlayer' 'yarn dev:css' 'yarn dev:next'",
+		"dev": "concurrently 'pnpm run dev:css' 'pnpm run dev:next'",
 		"dev:next": "next dev",
-		"dev:css": "yarn generate:css --watch",
-		"dev:contentlayer": "contentlayer dev",
+		"dev:css": "pnpm run generate:css --watch",
 		"generate:css": "unocss 'src/**/*.tsx' 'contentlayer.config.ts' '../../packages/ui/src/lib/components/**/*.tsx' --out-file ./src/styles/unocss.css --config ../../unocss.config.ts",
 		"lint": "prettier --check . && cross-env TIMING=1 eslint src --ext .mjs,.js,.cjs,.ts,.tsx --format=pretty",
 		"format": "prettier --write . && cross-env TIMING=1 eslint src --ext .mjs,.js,.cjs,.ts,.tsx --fix --format=pretty",
-		"fmt": "yarn format"
+		"fmt": "pnpm run format"
 	},
 	"type": "commonjs",
 	"contributors": [

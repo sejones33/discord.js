@@ -7,7 +7,7 @@
 		"build": "vite build",
 		"lint": "prettier --check . && cross-env TIMING=1 eslint src --ext .mjs,.js,.ts,.tsx --format=pretty",
 		"format": "prettier --write . && cross-env TIMING=1 eslint src --ext .mjs,.js,.ts,.tsx --fix --format=pretty",
-		"prepack": "yarn build && yarn lint",
+		"prepack": "pnpm run build && pnpm run lint",
 		"changelog": "git cliff --prepend ./CHANGELOG.md -u -c ./cliff.toml -r ../../ --include-path 'packages/ui/*'",
 		"release": "cliff-jumper",
 		"storybook": "storybook dev -p 6006",

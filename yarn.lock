@@ -2129,7 +2129,7 @@ __metadata:
     turbo: ^1.9.3
     typescript: ^5.0.4
     unocss: ^0.51.8
-    vercel: ^29.0.1
+    vercel: ^29.0.2
     vitest: ^0.29.8
   languageName: unknown
   linkType: soft
@@ -2491,7 +2491,7 @@ __metadata:
     happy-dom: ^9.10.1
     lighthouse: ^10.1.1
     meilisearch: ^0.32.3
-    next: ^13.3.2
+    next: ^13.3.2-canary.9
     next-mdx-remote: ^4.4.1
     next-themes: ^0.2.1
     prettier: ^2.8.8
@@ -3869,7 +3869,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@microsoft/tsdoc-config@npm:0.16.2":
+"@microsoft/tsdoc-config@npm:0.16.2, @microsoft/tsdoc-config@npm:~0.16.1":
   version: 0.16.2
   resolution: "@microsoft/tsdoc-config@npm:0.16.2"
   dependencies:
@@ -3878,18 +3878,6 @@ __metadata:
     jju: ~1.4.0
     resolve: ~1.19.0
   checksum: 12b0d703154076bcaac75ca42e804e4fc292672396441e54346d7eadd0d6b57f90980eda2b1bab89b224af86da34a2389f9054002e282011e795ca5919a4386f
-  languageName: node
-  linkType: hard
-
-"@microsoft/tsdoc-config@patch:@microsoft/tsdoc-config@npm%3A0.16.2#./.yarn/patches/@microsoft-tsdoc-config-npm-0.16.2-30fd115d09.patch::locator=%40discordjs%2Fdiscord.js%40workspace%3A.":
-  version: 0.16.2
-  resolution: "@microsoft/tsdoc-config@patch:@microsoft/tsdoc-config@npm%3A0.16.2#./.yarn/patches/@microsoft-tsdoc-config-npm-0.16.2-30fd115d09.patch::version=0.16.2&hash=974f29&locator=%40discordjs%2Fdiscord.js%40workspace%3A."
-  dependencies:
-    "@microsoft/tsdoc": 0.14.2
-    ajv: ~6.12.6
-    jju: ~1.4.0
-    resolve: ~1.19.0
-  checksum: 5c21552c558779b0dfd0a584ff4bddfc62f5e13cbe9d14c0350a2a37d98dbeb848d4a4d9dfeb746182918f05add5a2a95530deb3f53d3750c5bbe86128df62c6
   languageName: node
   linkType: hard
 
@@ -7592,10 +7580,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/next@npm:3.8.0":
-  version: 3.8.0
-  resolution: "@vercel/next@npm:3.8.0"
-  checksum: 414c451c664225abe00b5a5cd5069dca971d9ab95d526d17654b31bc49ab2fdc8125cecd1f84ffd15046fe6d55c58970b7ea20bcbd498ee0cbe700ecd054a83c
+"@vercel/next@npm:3.8.2":
+  version: 3.8.2
+  resolution: "@vercel/next@npm:3.8.2"
+  checksum: 05fca09c85266fcd98fdb6b2f9dadc86991fd1f74c34becc2dcdd41ea8018955768d953804068c57f77e7fecd062715e0ba5b10f1b260f35dc6b303f4e3c51e4
   languageName: node
   linkType: hard
 
@@ -19241,7 +19229,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:^13.3.2":
+"next@npm:^13.3.2, next@npm:^13.3.2-canary.9":
   version: 13.3.2
   resolution: "next@npm:13.3.2"
   dependencies:
@@ -24649,12 +24637,12 @@ __metadata:
   linkType: hard
 
 "typescript@npm:next":
-  version: 5.1.0-dev.20230429
-  resolution: "typescript@npm:5.1.0-dev.20230429"
+  version: 5.1.0-dev.20230430
+  resolution: "typescript@npm:5.1.0-dev.20230430"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 1d686f5435127f55b947855fbee80fdd767f20a363cb0dccd825109365922a08bd4d8dec1b8a1611b341f769a65d537b1460706f149affb2f21ac9f740d2035e
+  checksum: 0b3c35098752a8b37d2dfbe9bdd4f6668396a9cf28ecf8afe96a3ffb6e119a4f986befb8c68f39827d77472d1263d2d4e28350321ed98fd869c8aad51cc1d36c
   languageName: node
   linkType: hard
 
@@ -24689,12 +24677,12 @@ __metadata:
   linkType: hard
 
 "typescript@patch:typescript@next#~builtin<compat/typescript>":
-  version: 5.1.0-dev.20230429
-  resolution: "typescript@patch:typescript@npm%3A5.1.0-dev.20230429#~builtin<compat/typescript>::version=5.1.0-dev.20230429&hash=85af82"
+  version: 5.1.0-dev.20230430
+  resolution: "typescript@patch:typescript@npm%3A5.1.0-dev.20230430#~builtin<compat/typescript>::version=5.1.0-dev.20230430&hash=85af82"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: b9d49ee1dc244a366954b10028366420fc2e43395e56289efd0a1480775c911d7fcb6fc761db15cc9be4513890dd4c358c1782d800116a48c41983d2888715e8
+  checksum: 86a7c614e2f8e6ace6f7bff7aa30c0f726a09a1a6aad6c57931d37b08bf4237afc78d9443a3700b256e26c40b156a4f1fda8fa4d053da7eafc04eb8db87d1096
   languageName: node
   linkType: hard
 
@@ -25314,14 +25302,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vercel@npm:^29.0.1":
-  version: 29.0.1
-  resolution: "vercel@npm:29.0.1"
+"vercel@npm:^29.0.1, vercel@npm:^29.0.2":
+  version: 29.0.3
+  resolution: "vercel@npm:29.0.3"
   dependencies:
     "@vercel/build-utils": 6.7.2
     "@vercel/go": 2.5.1
     "@vercel/hydrogen": 0.0.64
-    "@vercel/next": 3.8.0
+    "@vercel/next": 3.8.2
     "@vercel/node": 2.14.0
     "@vercel/python": 3.1.60
     "@vercel/redwood": 1.1.15
@@ -25331,7 +25319,7 @@ __metadata:
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: 6349c71f0311f83d11db20d71105f84ed15da412aabcee5a48789ede838b2f8c06d77ed3effa554d94350f9b069fee423c8df44bcd55e630b8545b4075d77f00
+  checksum: 6ad64beffd3627c89b2930ff50e1a9b586c751c917c807f93448d27aec3ba23f1fdbca264dba0d50f3d54ba85573cb3abef8bc0264c8c8be23b71834cfa806cd
   languageName: node
   linkType: hard
 

@@ -19,7 +19,7 @@
 		"docs": "turbo run docs --parallel",
 		"docs:affected": "turbo run docs --filter='...[origin/main]' --parallel",
 		"postinstall": "is-ci || husky install",
-		"update": "yarn upgrade-interactive",
+		"update": "pnpm update -i",
 		"create-package": "node packages/scripts/src/packageScript.mjs"
 	},
 	"contributors": [
@@ -58,19 +58,16 @@
 		"turbo": "^1.9.3",
 		"typescript": "^5.0.4",
 		"unocss": "^0.51.8",
-		"vercel": "^29.0.1",
+		"vercel": "^29.0.2",
 		"vitest": "^0.29.8"
 	},
-	"resolutions": {
-		"@microsoft/tsdoc-config@~0.16.1": "patch:@microsoft/tsdoc-config@npm%3A0.16.2#./.yarn/patches/@microsoft-tsdoc-config-npm-0.16.2-30fd115d09.patch",
-		"@microsoft/tsdoc-config@0.16.2": "patch:@microsoft/tsdoc-config@npm%3A0.16.2#./.yarn/patches/@microsoft-tsdoc-config-npm-0.16.2-30fd115d09.patch"
+	"pnpm": {
+		"patchedDependencies": {
+			"@microsoft/tsdoc-config@0.16.2": "patches/@microsoft__tsdoc-config@0.16.2.patch"
+		}
 	},
 	"engines": {
 		"node": ">=16.9.0"
 	},
-	"workspaces": [
-		"apps/*",
-		"packages/*"
-	],
-	"packageManager": "yarn@3.5.0"
+	"packageManager": "pnpm@8.3.1"
 }

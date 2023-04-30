@@ -6,8 +6,8 @@
 		"build": "tsup",
 		"lint": "prettier --check . && cross-env TIMING=1 eslint src --ext .mjs,.js,.ts --format=pretty",
 		"format": "prettier --write . && cross-env TIMING=1 eslint src --ext .mjs,.js,.ts --fix --format=pretty",
-		"fmt": "yarn format",
-		"prepack": "yarn format && yarn build"
+		"fmt": "pnpm run format",
+		"prepack": "pnpm run format && pnpm run build"
 	},
 	"bin": "./dist/cli.js",
 	"directories": {

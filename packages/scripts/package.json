@@ -7,7 +7,7 @@
 		"build": "tsup",
 		"lint": "prettier --check . && cross-env TIMING=1 eslint src --ext .mjs,.js,.ts --format=pretty",
 		"format": "prettier --write . && cross-env TIMING=1 eslint src --ext .mjs,.js,.ts --fix --format=pretty",
-		"fmt": "yarn format"
+		"fmt": "pnpm run format"
 	},
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",

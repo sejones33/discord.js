@@ -6,8 +6,8 @@
 		"build": "tsup",
 		"lint": "prettier --check . && cross-env TIMING=1 eslint src --ext .mjs,.js,.ts --format=pretty",
 		"format": "prettier --write . && cross-env TIMING=1 eslint src --ext .mjs,.js,.ts --fix --format=pretty",
-		"fmt": "yarn format",
-		"prepack": "yarn lint && yarn build"
+		"fmt": "pnpm run format",
+		"prepack": "pnpm run lint && pnpm run build"
 	},
 	"type": "module",
 	"module": "./dist/index.js",
@@ -61,6 +61,7 @@
 	"engines": {
 		"node": ">=16.9.0"
 	},
+	"packageManager": "pnpm@8.3.1",
 	"publishConfig": {
 		"access": "public"
 	}
